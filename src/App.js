@@ -1,15 +1,19 @@
 import React from 'react';
-import { Route, Switch, withRouter } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
+import { NavBar } from './components';
 import { Image } from './views';
 
-import './App.css';
+import './App.scss';
 
 const App = () => {
   return (
-    <Switch>
-      <Route exact path='/' component={Image} />
-    </Switch>
+    <div className='app-container'>
+      <NavBar />
+      <Switch>
+        <Route exact path='/' component={Image} />
+      </Switch>
+    </div>
   );
 };
 
