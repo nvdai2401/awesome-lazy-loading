@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/awesome-lazy-loading/static/css/main.fb717f12.chunk.css",
+    "main.css": "/awesome-lazy-loading/static/css/main.9395aade.chunk.css",
     "main.js": "/awesome-lazy-loading/static/js/main.18c0e0ff.chunk.js",
     "main.js.map": "/awesome-lazy-loading/static/js/main.18c0e0ff.chunk.js.map",
     "runtime-main.js": "/awesome-lazy-loading/static/js/runtime-main.fea4c4b0.js",
@@ -8,15 +8,15 @@
     "static/js/2.1150ac4e.chunk.js": "/awesome-lazy-loading/static/js/2.1150ac4e.chunk.js",
     "static/js/2.1150ac4e.chunk.js.map": "/awesome-lazy-loading/static/js/2.1150ac4e.chunk.js.map",
     "index.html": "/awesome-lazy-loading/index.html",
-    "precache-manifest.b68d804a15b47bb2511945188576b353.js": "/awesome-lazy-loading/precache-manifest.b68d804a15b47bb2511945188576b353.js",
+    "precache-manifest.8d259f91245d0f022785298453416063.js": "/awesome-lazy-loading/precache-manifest.8d259f91245d0f022785298453416063.js",
     "service-worker.js": "/awesome-lazy-loading/service-worker.js",
-    "static/css/main.fb717f12.chunk.css.map": "/awesome-lazy-loading/static/css/main.fb717f12.chunk.css.map",
+    "static/css/main.9395aade.chunk.css.map": "/awesome-lazy-loading/static/css/main.9395aade.chunk.css.map",
     "static/js/2.1150ac4e.chunk.js.LICENSE.txt": "/awesome-lazy-loading/static/js/2.1150ac4e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fea4c4b0.js",
     "static/js/2.1150ac4e.chunk.js",
-    "static/css/main.fb717f12.chunk.css",
+    "static/css/main.9395aade.chunk.css",
     "static/js/main.18c0e0ff.chunk.js"
   ]
 }
