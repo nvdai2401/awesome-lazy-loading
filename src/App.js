@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { NavBar } from './components';
+// import { NavBar } from './components';
 import { Image } from './views';
 
 import './App.scss';
