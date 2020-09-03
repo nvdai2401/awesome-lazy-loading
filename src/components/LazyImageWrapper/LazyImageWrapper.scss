@@ -1,0 +1,35 @@
+.cell {
+  margin-bottom: 12px;
+  border: none;
+  background-color: #fff;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.2s ease-in;
+  }
+
+  .caption {
+    padding: 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cell {
+    margin-bottom: 0;
+  }
+}

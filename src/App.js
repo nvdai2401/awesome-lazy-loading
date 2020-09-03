@@ -9,7 +9,7 @@ import './App.scss';
 const App = () => {
   return (
     <div className='app-container'>
-      <NavBar />
+      {/* <NavBar /> */}
       <Switch>
         <Route exact path='/' component={Image} />
       </Switch>
