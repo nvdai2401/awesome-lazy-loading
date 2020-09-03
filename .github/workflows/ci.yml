@@ -40,8 +40,8 @@ jobs:
           github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           repository: ${{ github.repository }}
       - name: Cache dependencies
-    uses: actions/cache@v2
-    with:
-      path: |
-        **/node_modules
-      key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
