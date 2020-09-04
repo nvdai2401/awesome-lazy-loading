@@ -2,7 +2,7 @@
   "name": "awesome-lazy-loading",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nvdai2401.github.io/awesome-lazy-loading/",
+  "homepage": "/awesome-lazy-loading",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -17,8 +17,8 @@
     "uuid": "^8.3.0"
   },
   "scripts": {
-    "start": "cross-env PUBLIC_URL=/ react-scripts start",
-    "build": "cross-env PUBLIC_URL=/ react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
