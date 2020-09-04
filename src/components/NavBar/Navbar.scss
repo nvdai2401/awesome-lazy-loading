@@ -8,5 +8,8 @@
   li {
     list-style: none;
     border-right: 1px solid #ccc;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

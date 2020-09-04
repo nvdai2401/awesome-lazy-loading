@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  useLocation,
-  useHistory,
-} from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 
 import './Navbar.scss';
 
@@ -11,10 +8,13 @@ const NavBar = () => {
   const location = useLocation();
 
   console.log(history, location);
+  const changeRoute = (route) => {
+    history.push(route);
+  };
   return (
     <ul className='navbar-container'>
-      <li>Image Gallery</li>
-      <li>Form Editor</li>
+      <li onClick={() => changeRoute('/')}>Image Gallery</li>
+      <li onClick={() => changeRoute('/infinite-gallery')}>Infinite Gallery</li>
       <li>Table</li>
     </ul>
   );
