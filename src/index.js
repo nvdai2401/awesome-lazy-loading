@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/awesome-lazy-loading'>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
