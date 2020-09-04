@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c6fee8c3e34f2915f133f7a2d98dacf",
+    "revision": "bcb6d600b7a7d9985e3d7ab3cdc120a2",
     "url": "/awesome-lazy-loading/index.html"
   },
   {
-    "revision": "5de7c375e5f4d465492d",
+    "revision": "5d3d761fc5f78f5c8756",
     "url": "/awesome-lazy-loading/static/css/main.9395aade.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/awesome-lazy-loading/static/js/2.1150ac4e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5de7c375e5f4d465492d",
-    "url": "/awesome-lazy-loading/static/js/main.18c0e0ff.chunk.js"
+    "revision": "5d3d761fc5f78f5c8756",
+    "url": "/awesome-lazy-loading/static/js/main.9e005b44.chunk.js"
   },
   {
     "revision": "69f02927c6fa5d5bc6e3",
