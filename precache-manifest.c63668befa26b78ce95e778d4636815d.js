@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "271f06712661ea61517db5f18fbc8040",
+    "revision": "dc97e14bdbcaae0822b5b0a073bbc592",
     "url": "/awesome-lazy-loading/index.html"
   },
   {
-    "revision": "29ffab1a7755b386ba9e",
+    "revision": "0aab5dbe7cca32bee1c8",
     "url": "/awesome-lazy-loading/static/css/main.7fcf6972.chunk.css"
   },
   {
-    "revision": "356f8ece6f752e02b287",
-    "url": "/awesome-lazy-loading/static/js/2.6930c628.chunk.js"
+    "revision": "48611cbade981261829a",
+    "url": "/awesome-lazy-loading/static/js/2.745ac935.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/awesome-lazy-loading/static/js/2.6930c628.chunk.js.LICENSE.txt"
+    "url": "/awesome-lazy-loading/static/js/2.745ac935.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "29ffab1a7755b386ba9e",
-    "url": "/awesome-lazy-loading/static/js/main.c556ff0c.chunk.js"
+    "revision": "0aab5dbe7cca32bee1c8",
+    "url": "/awesome-lazy-loading/static/js/main.054d4307.chunk.js"
   },
   {
     "revision": "69f02927c6fa5d5bc6e3",
