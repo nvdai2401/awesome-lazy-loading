@@ -13,3 +13,9 @@
 1. Download zip file or type this command into your terminal `git clone git@github.com:nvdai2401/awesome-lazy-loading.git`
 2. Run `yarn` to install essential dependencies
 3. Run `yarn start` to start the web app. The app will run at `localhost:3000`.
+
+## Demo
+
+<p align="center"><img src="/images/loading.PNG" /></p>
+<p align="center"><img src="/images/half-loaded.PNG" /></p>
+<p align="center"><img src="/images/loaded.PNG" /></p>
