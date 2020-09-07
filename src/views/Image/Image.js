@@ -13,7 +13,7 @@ const Image = () => {
       const images = await res.json();
 
       images.forEach((img) => {
-        img.placeHolder = `https://picsum.photos/id/${img.id}/100/100/?blur=10`;
+        img.placeHolder = `https://picsum.photos/id/${img.id}/1/1/?blur=10`;
         img.alt = `Author: ${img.author} - Unsplash: ${img.url}`;
         img.src = `https://picsum.photos/id/${img.id}/600/600/`;
       });
