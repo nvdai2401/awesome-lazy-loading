@@ -1,10 +1,11 @@
 import React from 'react';
+import './Spinner.scss';
 
 const Spinner = () => (
   <div className='loading'>
     <svg
-      width='80'
-      height='80'
+      width='40'
+      height='40'
       viewBox='0 0 100 100'
       preserveAspectRatio='xMidYMid'
     >
@@ -12,7 +13,7 @@ const Spinner = () => (
         cx='50'
         cy='50'
         fill='none'
-        stroke='#49d1e0'
+        stroke='#6c757d'
         strokeWidth='10'
         r='35'
         strokeDasharray='164.93361431346415 56.97787143782138'

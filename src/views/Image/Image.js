@@ -1,26 +1,49 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
+import InfiniteScroll from 'react-infinite-scroll-component';
 
-import { LazyImageWrapper, FolkMe } from '../../components';
+import { LazyImageWrapper, FolkMe, Spinner } from '../../components';
 
 import './Image.scss';
 
+const LIMIT = 15;
+
 const Image = () => {
   const [images, setImages] = useState([]);
+  const [page, setPage] = useState(1);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const genImages = async () => {
-      const res = await fetch('https://picsum.photos/v2/list?page=1&limit=100');
-      const images = await res.json();
-
-      images.forEach((img) => {
-        img.placeHolder = `https://picsum.photos/id/${img.id}/1/1/?blur=10`;
-        img.alt = `Author: ${img.author} - Unsplash: ${img.url}`;
-        img.src = `https://picsum.photos/id/${img.id}/600/600/`;
-      });
-      setImages(images);
-    };
     genImages();
   }, []);
+
+  const fetchImages = async (page = 1) => {
+    const res = await fetch(
+      `https://picsum.photos/v2/list?page=${page}&limit=${LIMIT}`,
+    );
+    const data = await res.json();
+
+    return data;
+  };
+
+  const genImages = async (page = 1) => {
+    const data = await fetchImages(page);
+
+    data.forEach((img) => {
+      img.placeHolder = `https://picsum.photos/id/${img.id}/1/1/?blur=10`;
+      img.alt = `Author: ${img.author} - Unsplash: ${img.url}`;
+      img.src = `https://picsum.photos/id/${img.id}/600/600/`;
+    });
+
+    setImages([...images, ...data]);
+    setLoading(false);
+  };
+
+  const fetchMoreImages = async () => {
+    setLoading(true);
+    setPage(page + 1);
+    await genImages(page + 1);
+  };
 
   return (
     <div className='image-container'>
@@ -35,7 +58,12 @@ const Image = () => {
         ariaLabel='View source on Github'
         targetURL='https://github.com/nvdai2401/awesome-lazy-loading'
       />
-      <div className='container'>
+      <InfiniteScroll
+        dataLength={images.length}
+        next={fetchMoreImages}
+        hasMore={images.length !== 0}
+        className='container'
+      >
         {images.map((img) => (
           <LazyImageWrapper
             key={img.id}
@@ -45,7 +73,8 @@ const Image = () => {
             {...img}
           />
         ))}
-      </div>
+      </InfiniteScroll>
+      {loading ? <Spinner /> : null}
     </div>
   );
 };
