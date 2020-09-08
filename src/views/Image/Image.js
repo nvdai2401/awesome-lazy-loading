@@ -33,6 +33,7 @@ const Image = () => {
       img.placeHolder = `https://picsum.photos/id/${img.id}/1/1/?blur=10`;
       img.alt = `Author: ${img.author} - Unsplash: ${img.url}`;
       img.src = `https://picsum.photos/id/${img.id}/600/600/`;
+      img.srcset = `https://picsum.photos/id/${img.id}/700/700 1x, https://picsum.photos/id/${img.id}/1200/1200 2x`;
     });
 
     setImages([...images, ...data]);

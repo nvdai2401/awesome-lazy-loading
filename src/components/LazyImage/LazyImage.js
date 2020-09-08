@@ -47,15 +47,25 @@ class LazyImage extends React.Component {
   }
 
   render() {
-    const { width, height, className, alt, placeHolder } = this.props;
+    const {
+      width,
+      height,
+      className,
+      alt,
+      placeHolder,
+      srcset = '',
+    } = this.props;
     return (
       <img
         src={placeHolder}
-        width={width || '100%'}
-        height={height || '100%'}
+        srcSet={srcset}
+        // width={width || '100%'}
+        // height={height || '100%'}
         ref={(imgElm) => (this.imgElm = imgElm)}
         className={`${className}`}
         alt={alt}
+        sizes='(max-width: 768px) 10vw, 200px'
+        lazy='loading'
       />
     );
   }

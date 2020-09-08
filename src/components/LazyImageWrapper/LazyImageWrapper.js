@@ -4,15 +4,16 @@ import LazyImage from '../LazyImage';
 import './LazyImageWrapper.scss';
 
 const LazyImageWrapper = (props) => {
-  const { placeHolder, src, alt, author, url } = props;
+  const { placeHolder, src, srcset, alt, author, url } = props;
   return (
     <div className='cell'>
       <LazyImage
         src={src}
+        srcset={srcset}
         alt={alt}
         placeHolder={placeHolder}
-        height='300'
-        width='300'
+        // height='400'
+        // width='400'
         className='image'
       />
       <div className='caption'>
