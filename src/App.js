@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { Image } from './views';
+import { ImageGallery } from './views';
 
 import './App.scss';
 
 const App = () => {
   return (
     <div className='app-container'>
-      <Image />
+      <ImageGallery />
     </div>
   );
 };

@@ -4,11 +4,11 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 
 import { LazyImageWrapper, FolkMe, Spinner } from '../../components';
 
-import './Image.scss';
+import './ImageGallery.scss';
 
 const LIMIT = 15;
 
-const Image = () => {
+const ImageGallery = () => {
   const [images, setImages] = useState([]);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
@@ -79,4 +79,4 @@ const Image = () => {
   );
 };
 
-export default Image;
+export default ImageGallery;
